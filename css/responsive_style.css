@@ -1,0 +1,212 @@
+@charset "utf-8";
+/* CSS Document */
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "source-sans-pro";
+}
+body {
+  background-color: #FFFFFF;
+}
+#logotipo {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+/* Galeria */
+.gallery {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 90%;
+  max-height: 50vw;
+  overflow: hidden;
+}
+.gallery__stream {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+}
+.gallery__item {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  transition: 1s all ease;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 5px;
+}
+/* Itens */
+.gallery__item:nth-child(1) {
+  left: 0;
+  z-index: 1;
+  transform: translateX(-100%) scale(.8);
+}
+.gallery__item:nth-child(2) {
+  left: 0;
+  z-index: 2;
+  transform: translateX(-50%) scale(.8);
+}
+.gallery__item:nth-child(3) {
+  left: 50%;
+  z-index: 4;
+  transform: translateX(-50%) scale(1);
+}
+.gallery__item:nth-child(4) {
+  left: 100%;
+  z-index: 2;
+  transform: translateX(-50%) scale(.8);
+}
+.gallery__item:nth-child(n+5) {
+  left: 100%;
+  z-index: 1;
+  transform: scale(.8);
+}
+/* Backgrounds */
+.bg-1 {
+  background-image: url("../img/0071824cx011-06.jpg");
+}
+.bg-2 {
+  background-image: url("../img/0071824cx028-01.jpg");
+}
+.bg-3 {
+  background-image: url("../img/0071824cx001-05.jpg");
+}
+.bg-4 {
+  background-image: url("../img/0071824cx011-06.jpg");
+}
+.bg-5 {
+  background-image: url("../img/0071824cx028-01.jpg");
+}
+.bg-6 {
+  background-image: url("../img/0071824cx001-05.jpg");
+}
+/* Controles */
+.gallery__prev, .gallery__next {
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  width: 50%;
+  height: 100%;
+  transform: translateX(-50%) translateY(-50%) scale(.8);
+  cursor: pointer;
+}
+.gallery__prev {
+  left: 0;
+}
+.gallery__next {
+  left: 100%;
+}
+/* Sombras */
+.gallery:before, .gallery:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  z-index: 3;
+}
+.gallery:before {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.gallery:after {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+/* Buttons*/
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu > div {
+  background-color: #F0F0F0;
+  padding: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 30%;
+  font-weight: bold;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, .4);
+}
+.menu > div:hover {
+  background-color: #737373;
+  transform: scale(1.1);
+  box-sizing: border-box;
+  box-shadow: 1px 1px 1px 2px #515151;
+}
+.bt1 {
+  font-size: 1;
+  position: absolute;
+  left: 10%;
+  bottom: 20%
+}
+.bt2 {
+  position: absolute;
+  right: 5%;
+  bottom: 50%
+}
+.bt3 {
+  position: absolute;
+  left: 50%;
+  bottom: 5%
+}
+#rodape {
+  font-family: "source-sans-pro";
+  position: absolute;
+  top: 90%;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  line-height: 10px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10;
+  background-color: #000000;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  color: #393939;
+  font-family: "source-sans-pro";
+}
+.left {
+  background-color: #FFFFFF;
+  padding: 20px;
+  float: left;
+  width: 30%;
+  color: #393939;
+}
+.main {
+  background-color: #FFFFFF;
+  padding: 20px;
+  float: left;
+  width: 30%;
+  color: #393939;
+}
+.right {
+  background-color: #FFFFFF;
+  padding: 20px;
+  float: right;
+  width: 40%;
+  color: #393939;
+}
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+	
+.box {
+	width: 100%;
+	height: 100%;
+
+  }
