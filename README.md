@@ -12,6 +12,9 @@ numa etapa posterior, incluir outras formas de acessibilidade desses mesmos cont
 
 > Status do Projeto: Em desenvolvimento :warning:
 
+## Deploy
+Acesse o site: https://ivannatech.github.io/old-amplia-abrete-codigo/
+
 ## Linguagens
 - HTML, CSS e JavaScript.
 
